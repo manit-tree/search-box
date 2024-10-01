@@ -1,0 +1,18 @@
+{
+  "name": "search-box",
+  "version": "1.0.0",
+  "description": "Auto complete search-box",
+  "type":"module",
+  "main": "app.js",
+  "scripts": {
+    "dev":"vite",
+    "build": "vite build --config vite.config.mjs && vite build --config vite.config.min.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lightningcss": "^1.25.1",
+    "vite-plugin-css-injected-by-js": "^3.4.0"
+  }
+}

@@ -1,0 +1,30 @@
+@layer reset {
+	* {
+		margin:0;
+		padding:0;
+	}
+
+	html, body {
+		height: 100%;
+	}
+}
+
+@layer base-color {
+	:root {
+		--text-color: #333;
+		--bg-color: #fff;
+		--outline-color: #ccc;
+	}
+}
+
+body {
+	color: var(--text-color);
+	background-color: var(--bg-color);
+	display: grid;
+	place-content: center;
+}
+
+#app {
+	width: 940px;
+	margin-inline: auto;
+}
