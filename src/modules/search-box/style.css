@@ -1,0 +1,65 @@
+.search-box-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #fff;
+    max-height: 320px;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    scrollbar-width: thin;
+    scrollbar-color: #000 #fff;
+}
+
+.search-box-results.show {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.search-box-result-item {
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.search-box-result-item:hover {
+    background-color: #f0f0f0;
+    transform: translateX(5px);
+}
+
+.search-box-result-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.search-box-result-item a:hover {
+    text-decoration: underline;
+}
+
+.search-box-results::-webkit-scrollbar {
+    width: 8px;
+}
+
+.search-box-results::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+.search-box-results::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 10px;
+}
+
+.search-box-results::-webkit-scrollbar-thumb:hover {
+    background: #000;
+}

@@ -1,0 +1,32 @@
+@layer reset {
+    :root {
+      font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+      font-weight: 400;  
+    }
+  
+    html, body {
+      height: 100%;
+    }
+  
+    * {
+      margin: 0;
+      padding: 0;
+    }
+} 
+
+#app {
+    margin-top: 60px;
+    
+    h1 {
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .search-box-container {
+        max-width: 80%;
+        margin: 0 auto;
+    }  
+}
+ 
+  
